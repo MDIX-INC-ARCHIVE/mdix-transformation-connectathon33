@@ -11,7 +11,14 @@ preprocessors:
        groups:
          - SBHA
        arguments:
-         delimiter: COMMA       
+         delimiter: COMMA
+    hl7v2:
+       name: HL7V2MessagePreProcessor
+       class: org.mdmi.processors.hl7v2.HL7V2MessagePreProcessor
+       groups:
+         - HL7V2       
+         
+           
          
 postprocessors:
     fhir:
