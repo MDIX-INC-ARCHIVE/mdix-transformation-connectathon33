@@ -17,7 +17,11 @@ preprocessors:
        class: org.mdmi.processors.hl7v2.HL7V2MessagePreProcessor
        groups:
          - HL7V2       
-         
+    fhir:
+       name: PreProcessorForFHIRJson
+       class: org.mdmi.processors.fhir.PreProcessorForFHIRJson
+       groups:
+         - FHIRR4JSON    
            
          
 postprocessors:

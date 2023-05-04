@@ -143,7 +143,7 @@ class ConnectathonTest {
 				}).collect(Collectors.toSet());
 
 		for (String document : documents) {
-			runTransformation("HL7V2.ADTA01CONTENT", "FHIRR4JSON.MasterBundle", document, "xml");
+			runTransformation("HL7V2.ADTA01CONTENT", "FHIRR4JSON.MasterBundle", document, "json");
 		}
 	}
 
