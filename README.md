@@ -19,7 +19,6 @@ After installing Postman, download and expand the zip file as described above. F
 - GET Get  
 - POST CDAtoFHIR  
 - POST FHIR2CDA  
-- POST V2toFHIR  
 - POST SBHAtoFHIR 
 - POST SBHAtoCDA  
 
