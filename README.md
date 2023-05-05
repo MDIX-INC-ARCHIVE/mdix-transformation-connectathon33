@@ -31,7 +31,7 @@ From there click the **Select Files** button and enter your message file.
 
 ![](https://github.com/MDMI/Getting-Started/blob/main/files/images/Postman3.png)
 
-Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, ``fhir``,  and ``V2``.
+Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, and ``fhir``.
 
 For example, to transform a CDA message to FHIR, select the **POST CDAtoFHIR** request from the left pane of Postman. In the Body tab select a file from the ``cda`` subdirectory. 
 
