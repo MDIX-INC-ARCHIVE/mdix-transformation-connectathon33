@@ -39,6 +39,8 @@ For example, to transform a CDA message to FHIR, select the **POST CDAtoFHIR** r
 
 You can also use your own source files. Just be certain that your files conform to the format being used.
 
+Note: FHIR permits a number of file structures. If using your own FHIR source message, please first view the sample that has been provided and adjust yours to match it.
+
 At this point you can run by clicking the **Send** button in the upper right of the window. The resultant message will appear at the bottom of the right pane.
 <!--
 #### Creating POST Requests ####
