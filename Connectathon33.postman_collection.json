@@ -184,7 +184,7 @@
 	"variable": [
 		{
 			"key": "test-url",
-			"value": "http://3.145.12.121:8282/mdmi/transformation"
+			"value": "http://mdmi-demo.mdixinc.net:8282/mdmi/transformation"
 		}
 	]
 }
