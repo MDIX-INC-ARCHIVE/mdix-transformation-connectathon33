@@ -9,13 +9,11 @@ The components of MDMI message transformations have been provided here on GitHub
 To get the full set of files for this exercise, download this project to your system. Use the dropdown button labeled "Code" at the top right of this pane. Click the dropdown and select your preferred means of downloading. Your choices will include:
 - Opening with GitHub Desktop (only if you have it installed)
 - Download ZIP
-- Using the Git download command line using the URL provided - https://github.com/MDMI/Getting-Started.git
+- Using the Git download command line using the URL provided - https://github.com/MDMI/mdix-transformation-connectathon33
 
 ### API Test (Postman) ###
-A set of API requests is provided for ease of use. In this project, open the file https://github.com/MDMI/mdix-transformation-connectathon33/blob/main/Connectathon33.postman_collection.json. Using a text editor, copy the file contents into a new editor document and save it with the extension "json"
-
-#### Using the Prepackaged Requests ####
-After installing Postman, set up the project file as described above. From within Postman, click the **Import** button at the top of the left pane and select this file. It will create a "collection" named **MDIX Demonstration**. This provides six requests:
+#### Prepackaged API Requests ####
+A set of API requests is provided for ease of use. From within Postman, click the **Import** button at the top of the left pane and select the file ``Connectathon33.postman_collection.json`` from the root of the directory that was downloaded. It will create a "collection" named **MDIX Demonstration**. This provides six requests:
 - GET Get  
 - POST CDAtoFHIR  
 - POST FHIR2CDA  
