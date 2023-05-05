@@ -35,7 +35,7 @@ From there click the **Select Files** button and enter your message file.
 
 Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, ``fhir``, ``sbha``, and ``V2``.
 
-For example, to transform a CDA message to FHIR, select at file from the ``cda`` subdirectory.
+For example, to transform a CDA message to FHIR, select the **POST CDAtoFHIR** request from the left pane of Postman. In the Body tab select at file from the ``cda`` subdirectory.
 
 At this point you can run by clicking the **Send** button in the upper right of the window. The resultant message will appear at the bottom of the right pane.
 <!--
