@@ -13,12 +13,10 @@ To get the full set of files for this exercise, download this project to your sy
 
 ### API Test (Postman) ###
 #### Prepackaged API Requests ####
-A set of API requests is provided for ease of use. From within Postman, click the **Import** button at the top of the left pane and select the file ``Connectathon33.postman_collection.json`` from the root of the directory that was downloaded. It will create a "collection" named **Connectathon33**. This provides six requests:
+A set of API requests is provided for ease of use. From within Postman, click the **Import** button at the top of the left pane and select the file ``Connectathon33.postman_collection.json`` from the root of the directory that was downloaded. It will create a "collection" named **Connectathon33**. This provides three requests:
 - GET Get  
 - POST CDAtoFHIR  
 - POST FHIR2CDA  
-- POST SBHAtoFHIR 
-- POST SBHAtoCDA  
 
 #### Running Postman ####
 The POST requests are used for message transformation. For example, to transform a CDA message, click on **GET CDAtoFHIR** from the left pane. 
@@ -33,7 +31,7 @@ From there click the **Select Files** button and enter your message file.
 
 ![](https://github.com/MDMI/Getting-Started/blob/main/files/images/Postman3.png)
 
-Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, ``fhir``, ``sbha``, and ``V2``.
+Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, ``fhir``,  and ``V2``.
 
 For example, to transform a CDA message to FHIR, select the **POST CDAtoFHIR** request from the left pane of Postman. In the Body tab select a file from the ``cda`` subdirectory. 
 
