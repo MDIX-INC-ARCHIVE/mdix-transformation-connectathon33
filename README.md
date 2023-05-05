@@ -33,7 +33,7 @@ From there click the **Select Files** button and enter your message file.
 
 ![](https://github.com/MDMI/Getting-Started/blob/main/files/images/Postman3.png)
 
-Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**
+Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format.
 
 At this point you can run by clicking the **Send** button in the upper right of the window. The resultant message will appear at the bottom of the right pane.
 <!--
