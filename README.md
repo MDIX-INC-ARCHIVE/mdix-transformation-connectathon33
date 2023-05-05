@@ -12,10 +12,10 @@ To get the full set of files for this exercise, download this project to your sy
 - Using the Git download command line using the URL provided - https://github.com/MDMI/Getting-Started.git
 
 ### API Test (Postman) ###
-A set of API requests is provided for ease of use. Download this zip file, [MDMI_Demo.zip,](https://github.com/MDMI/Getting-Started/blob/main/files/MDMI_Demo.zip) and expand it. The resultant file is *MDMI_Demo.json*.
+A set of API requests is provided for ease of use. In this project, open the file https://github.com/MDMI/mdix-transformation-connectathon33/blob/main/Connectathon33.postman_collection.json. Using a text editor, copy the file contents into a new editor document and save it with the extension "json"
 
 #### Using the Prepackaged Requests ####
-After installing Postman, download and expand the zip file as described above. From within Postman, click the **Import** button at the top of the left pane and select this file. It will create a "collection" named **MDIX Demonstration**. This provides six requests:
+After installing Postman, set up the project file as described above. From within Postman, click the **Import** button at the top of the left pane and select this file. It will create a "collection" named **MDIX Demonstration**. This provides six requests:
 - GET Get  
 - POST CDAtoFHIR  
 - POST FHIR2CDA  
