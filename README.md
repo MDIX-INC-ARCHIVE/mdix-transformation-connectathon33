@@ -1,4 +1,8 @@
 
+
+git subtree pull --prefix=src/main/resources/maps/ccda-2.1 https://github.com/MDMI/maps-ccda-2.1.git  main
+
+
 ## Hands-on with MDMI Transformations
 The components of MDMI message transformations have been provided here on GitHub as well as staged online for immediate use. To examine message transformations for yourself, we suggest these:
 
