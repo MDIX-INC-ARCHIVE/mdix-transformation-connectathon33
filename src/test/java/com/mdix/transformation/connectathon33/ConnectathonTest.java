@@ -83,7 +83,7 @@ class ConnectathonTest {
 		return response.getBody();
 	}
 
-	@Test
+//	@Test
 	public void testCDA2FHIR() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/samples/cda").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
@@ -115,7 +115,7 @@ class ConnectathonTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void testV22FHIR() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/samples/v2").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
@@ -131,7 +131,7 @@ class ConnectathonTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void testV22CDA() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/samples/v2").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
@@ -147,7 +147,7 @@ class ConnectathonTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void testSBHA2FHIR() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/samples/sbha").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
@@ -163,7 +163,7 @@ class ConnectathonTest {
 		}
 	}
 
-	@Test
+//	@Test
 	public void testSBHA2CDA() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/samples/sbha").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {

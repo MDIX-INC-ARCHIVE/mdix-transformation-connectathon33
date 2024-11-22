@@ -1,10 +1,10 @@
 version: 2.1
 preprocessors:
-    cda:
-       name: CDAPreProcesor
-       class: org.mdmi.processors.cda.CDAPreProcesor
-       groups:
-         - CDAR2
+#    cda:
+#       name: CDAPreProcesor
+#       class: org.mdmi.processors.cda.CDAPreProcesor
+#       groups:
+#         - CDAR2
     demographics:
        name: Deliminated2XML
        class: org.mdmi.processors.delimited.Delimited2XML
@@ -12,11 +12,11 @@ preprocessors:
          - SBHA
        arguments:
          delimiter: COMMA
-    hl7v2:
-       name: HL7V2MessagePreProcessor
-       class: org.mdmi.processors.hl7v2.HL7V2MessagePreProcessor
-       groups:
-         - HL7V2       
+#    hl7v2:
+#       name: HL7V2MessagePreProcessor
+#       class: org.mdmi.processors.hl7v2.HL7V2MessagePreProcessor
+#       groups:
+#         - HL7V2       
     fhir:
        name: PreProcessorForFHIRJson
        class: org.mdmi.processors.fhir.PreProcessorForFHIRJson
@@ -31,17 +31,17 @@ postprocessors:
        groups:
          - FHIRR4JSON         
 
-sourcesemanticprocessors:
-    sourcelog:
-        name: SourceLogSemantic
-        class: org.mdmi.core.engine.semanticprocessors.LogSemantic
-        arguments:
-          direction: FROM         
+#sourcesemanticprocessors:
+#    sourcelog:
+#        name: SourceLogSemantic
+#        class: org.mdmi.core.engine.semanticprocessors.LogSemantic
+#        arguments:
+#          direction: FROM         
 
-targetsemanticprocessors:
-    targetlog:
-        name: TargetLogSemantic
-        class: org.mdmi.core.engine.semanticprocessors.LogSemantic
-        arguments:
-          direction: TO
+#targetsemanticprocessors:
+#    targetlog:
+#        name: TargetLogSemantic
+ #       class: org.mdmi.core.engine.semanticprocessors.LogSemantic
+ #       arguments:
+ #         direction: TO
                      
