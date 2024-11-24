@@ -1,4 +1,4 @@
-package com.mdix.transformation.connectathon33;
+package com.mdix.transformation.example;
 
 /*******************************************************************************
  * Copyright (c) 2023 seanmuir.
@@ -49,7 +49,7 @@ import org.springframework.util.MultiValueMap;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.RANDOM_PORT)
-class ConnectathonTest {
+class ExampleTest {
 
 	@Autowired
 	private TestRestTemplate template;
@@ -83,9 +83,9 @@ class ConnectathonTest {
 		return response.getBody();
 	}
 
-//	@Test
-	public void testCDA2FHIR() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/cda").listFiles())
+	@Test
+	public void testCDA2FHIRExample() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/examples/cda").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
 					try {
 						return t.getCanonicalPath();
@@ -100,8 +100,8 @@ class ConnectathonTest {
 	}
 
 	@Test
-	public void testFHIR2CDA() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/fhir").listFiles())
+	public void testFHIR2CDAExample() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/examples/fhir").listFiles())
 				.filter(file -> !file.isDirectory()).map(t -> {
 					try {
 						return t.getCanonicalPath();
@@ -112,70 +112,6 @@ class ConnectathonTest {
 
 		for (String document : documents) {
 			runTransformation( "FHIRR4JSON.MasterBundle","CDAR2.ContinuityOfCareDocument", document, "xml");
-		}
-	}
-
-//	@Test
-	public void testV22FHIR() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/v2").listFiles())
-				.filter(file -> !file.isDirectory()).map(t -> {
-					try {
-						return t.getCanonicalPath();
-					} catch (IOException e) {
-						return "";
-					}
-				}).collect(Collectors.toSet());
-
-		for (String document : documents) {
-			runTransformation("HL7V2.ADTA01CONTENT", "FHIRR4JSON.MasterBundle", document, "json");
-		}
-	}
-
-//	@Test
-	public void testV22CDA() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/v2").listFiles())
-				.filter(file -> !file.isDirectory()).map(t -> {
-					try {
-						return t.getCanonicalPath();
-					} catch (IOException e) {
-						return "";
-					}
-				}).collect(Collectors.toSet());
-
-		for (String document : documents) {
-			runTransformation("HL7V2.ADTA01CONTENT", "FHIRR4JSON.MasterBundle", document, "json");
-		}
-	}
-
-//	@Test
-	public void testSBHA2FHIR() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/sbha").listFiles())
-				.filter(file -> !file.isDirectory()).map(t -> {
-					try {
-						return t.getCanonicalPath();
-					} catch (IOException e) {
-						return "";
-					}
-				}).collect(Collectors.toSet());
-
-		for (String document : documents) {
-			runTransformation("SBHA.Demographics", "FHIRR4JSON.MasterBundle", document, "json");
-		}
-	}
-
-//	@Test
-	public void testSBHA2CDA() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/samples/sbha").listFiles())
-				.filter(file -> !file.isDirectory()).map(t -> {
-					try {
-						return t.getCanonicalPath();
-					} catch (IOException e) {
-						return "";
-					}
-				}).collect(Collectors.toSet());
-
-		for (String document : documents) {
-			runTransformation("SBHA.Demographics","CDAR2.ContinuityOfCareDocument", document, "xml");
 		}
 	}
 

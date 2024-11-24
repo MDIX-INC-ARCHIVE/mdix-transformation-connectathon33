@@ -2,7 +2,7 @@ version: "3.9"
 services:
   connectathon33:
     image: mdmiservices/transformation:latest
-    container_name: mdix-transformation-connectathon33
+    container_name: transformation-example 
     environment:
       - JAVA_OPTS="-Xmx6048m"
     network_mode: default

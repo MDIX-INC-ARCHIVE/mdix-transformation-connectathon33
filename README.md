@@ -13,7 +13,7 @@ The components of MDMI message transformations have been provided here on GitHub
 To get the full set of files for this exercise, download this project to your system. Use the dropdown button labeled "Code" at the top right of this pane. Click the dropdown and select your preferred means of downloading. Your choices will include:
 - Opening with GitHub Desktop (only if you have it installed)
 - Download ZIP. (Unzip the file after download.)
-- Using the Git download command line using the URL provided - https://github.com/MDMI/mdix-transformation-connectathon33
+- Using the Git download command line using the URL provided - https://github.com/mdmi/transformation-example.git
 
 ### API Test (Postman) ###
 #### Prepackaged API Requests ####
@@ -35,7 +35,7 @@ From there click the **Select Files** button and enter your message file.
 
 ![](https://github.com/MDMI/Getting-Started/blob/main/files/images/Postman3.png)
 
-Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \mdix-transformation-connectathon33-main\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, and ``fhir``.
+Sample files are provided in the download at **_YOUR_DOWNLOAD_DIRECTORY_ \transformation-example\src\test\resources**. The subidrectory names there refer to the source file format - ``cda``, and ``fhir``.
 
 For example, to transform a CDA message to FHIR, select the **POST CDAtoFHIR** request from the left pane of Postman. In the Body tab select a file from the ``cda`` subdirectory. 
 
